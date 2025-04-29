@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=100%, initial-scale=1.0">
+	<title>Emotion Based Music Player</title>
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<script src="code.js"></script>
+	<header>Emotion Based Music Player</header>
+	<div id="img"></div>
+	<div id="song">
+		<p id="song_name"></p>
+	</div>
+	<audio controls id="main_slider" onended="song_over()">
+		<source id="sel" type="audio/mpeg">
+		<source id="sel" type="audio/x-m4a">
+		Your browser does not support the audio element.
+	</audio>
+	</div>
+	<div>
+		<button id="Mood_change" onclick="get_emotion()">Recognise</button>
+	</div>
+	<div>
+		<button id="Random_play" onclick="random_play()">Random</button>
+	</div>
+	<div>
+		<button id="pre" onclick="previous()">previous</button>
+		<button id="play" onclick="play_pause()">play/pause</button>
+		<button id="next" onclick="song_over()">next</button>
+	</div>
+</body>
+
+</html>
